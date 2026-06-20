@@ -1,0 +1,11 @@
+# Copy to local.properties (gitignored) and adjust paths/URLs for your machine.
+#
+#   cp local.properties.example local.properties
+#
+# Android SDK — required for Gradle builds (Android Studio usually creates this automatically)
+sdk.dir=/path/to/Android/sdk
+
+# Optional: override API base URL without editing build.gradle.kts
+# Emulator → host machine: http://10.0.2.2:8080
+# Physical device on same LAN: http://192.168.x.x:8080
+# API_BASE_URL=http://10.0.2.2:8080

@@ -1,0 +1,57 @@
+# Built application files
+*.apk
+*.aab
+*.ap_
+*.dex
+
+# Android Studio / IntelliJ
+*.iml
+.idea/
+.idea/caches/
+.idea/libraries/
+.idea/modules.xml
+.idea/workspace.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+.idea/gradle.xml
+.idea/misc.xml
+.idea/compiler.xml
+.idea/deploymentTargetDropDown.xml
+.idea/render.experimental.xml
+
+# Gradle
+.gradle/
+build/
+**/build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Local configuration (SDK path, signing secrets)
+local.properties
+*.keystore
+*.jks
+keystore.properties
+signing.properties
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Native / NDK
+.externalNativeBuild/
+.cxx/
+captures/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Log / temp
+*.log
+*.hprof
+
+# Kotlin
+.kotlin/
+
+# Android Studio captures
+/captures

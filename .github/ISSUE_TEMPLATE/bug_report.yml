@@ -1,0 +1,58 @@
+name: Bug report
+description: Report something that is broken or behaves unexpectedly
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug. Please include steps to reproduce when possible.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: A clear description of the bug.
+      placeholder: e.g. Login fails with 401 after token refresh
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Numbered steps to reproduce the behavior.
+      placeholder: |
+        1. Start API with docker compose
+        2. Open app on emulator
+        3. Tap Login
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Device, Android version, API base URL, backend version if known.
+      placeholder: |
+        - Emulator: Pixel 6 API 34
+        - API_BASE_URL: http://10.0.2.2:8080
+        - Backend: marketplace-platform-api @ main
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / screenshots
+      description: Redact tokens and personal data before pasting.
+    validations:
+      required: false

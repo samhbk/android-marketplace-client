@@ -1,0 +1,1 @@
+Android marketplace client demonstrating Kotlin, REST API integration, JWT auth, paginated catalog, wishlist, checkout flows, and cross-platform mobile experience.
