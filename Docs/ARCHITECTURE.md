@@ -49,5 +49,5 @@ Single-module Android app with a thin **data layer**, **repository**, and **Jetp
 
 ## Related projects
 
-- **iOS client** (primary mobile focus): SwiftUI marketplace app on the same API contract.
-- **Symfony API**: `marketplace-platform-api` — Docker, JWT, OpenAPI, PHPUnit.
+- **iOS client** (primary mobile focus): [ios-marketplace-product-app](https://github.com/sameh-bakleh/ios-marketplace-product-app) — SwiftUI client on a related Laravel API contract.
+- **Symfony API**: [symfony-marketplace-api](https://github.com/sameh-bakleh/symfony-marketplace-api) — Docker, JWT, OpenAPI, PHPUnit.

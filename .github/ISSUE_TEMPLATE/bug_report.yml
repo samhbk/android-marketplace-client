@@ -45,7 +45,7 @@ body:
       placeholder: |
         - Emulator: Pixel 6 API 34
         - API_BASE_URL: http://10.0.2.2:8080
-        - Backend: marketplace-platform-api @ main
+        - Backend: symfony-marketplace-api @ main
     validations:
       required: false
 

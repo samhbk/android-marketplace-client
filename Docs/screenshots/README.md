@@ -1,19 +1,12 @@
 # Screenshots
 
-README gallery assets for the marketplace flows.
+Captured on **Pixel 6 emulator · API 34 · light mode** against [symfony-marketplace-api](https://github.com/sameh-bakleh/symfony-marketplace-api) (`customer@demo.marketplace` / `DemoPass2026!`).
 
-| File | Screen |
-|------|--------|
-| `shop.png` | Shop tab — search, filters, product list |
-| `product-detail.png` | Product detail — image, price, order CTA |
-| `login.png` | Sign-in screen |
-| `orders.png` | Orders tab with at least one order |
+| File | Screen | Flow |
+|------|--------|------|
+| [`shop.png`](shop.png) | Shop | Paginated catalog · search · category filter |
+| [`product-detail.png`](product-detail.png) | Product detail | Hero image · price · checkout CTA |
+| [`login.png`](login.png) | Login | JWT sign-in against Symfony API |
+| [`orders.png`](orders.png) | Orders | Order history for authenticated user |
 
-## Recapture (optional)
-
-```bash
-# With emulator running and app on the target screen:
-adb exec-out screencap -p > Docs/screenshots/shop.png
-```
-
-Use seeded API data only — no real user emails or tokens in screenshots.
+Synthetic demo catalog only — no real user content or production URLs.

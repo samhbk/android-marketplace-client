@@ -6,15 +6,18 @@
 
 Supporting portfolio sample — native Android client for a multi-vendor marketplace REST API. Demonstrates the same product domain as my **primary iOS marketplace app** without competing for attention: catalog, auth, wishlist, orders, and checkout against a Symfony backend.
 
+![License: MIT](https://img.shields.io/badge/License-MIT-green)
+
 | | |
 |---|---|
-| **Repo** | `android-marketplace-client` |
+| **Repo** | [`android-marketplace-client`](https://github.com/sameh-bakleh/android-marketplace-client) |
 | **Package** | `com.marketplace.app` |
 | **Platform** | Android 8+ (API 26) · Kotlin 2.0 |
-| **Positioning** | **iOS-first** mobile engineer — this repo proves **cross-platform** depth on a shared API contract |
+| **Backend** | [`symfony-marketplace-api`](https://github.com/sameh-bakleh/symfony-marketplace-api) |
+| **Positioning** | **iOS-first** mobile engineer — cross-platform depth on a shared API contract |
 | **Evaluate in** | ~10 min (clone → tests → skim `data/` + `ui/`) |
 
-Pair with [ios-marketplace-product-app](https://github.com/sameh-bakleh/ios-marketplace-product-app) (primary mobile sample) and [symfony-marketplace-api](https://github.com/sameh-bakleh/symfony-marketplace-api) (Symfony backend).
+Pair with [ios-marketplace-product-app](https://github.com/sameh-bakleh/ios-marketplace-product-app) (primary mobile sample) and the Symfony backend above.
 
 ---
 
@@ -121,7 +124,19 @@ git clone https://github.com/sameh-bakleh/symfony-marketplace-api.git
 cd symfony-marketplace-api && cp .env.example .env
 docker compose up -d --build
 # Host API: http://localhost:8080
+# Load fixtures: docker compose exec app php bin/console doctrine:fixtures:load --no-interaction
 ```
+
+### Demo login (after fixtures)
+
+| Email | Password | Role |
+|-------|----------|------|
+| `customer@demo.marketplace` | `DemoPass2026!` | Customer — browse, wishlist, checkout |
+| `seller@demo.marketplace` | `DemoPass2026!` | Seller — catalog management |
+
+Registration creates an account but does **not** auto-login — sign in after registering.
+
+> **Note:** `.env.example` documents optional overrides only. The app reads `API_BASE_URL` from `local.properties`, not from `.env`.
 
 ### 3. Build and run
 
